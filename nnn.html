@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+
+.profile-container{
+display:flex;
+flex-direction:column;
+padding: 20px;
+}
+
+.profile-section{
+display:flex;
+align-items:center;
+mardin-bottom:30px;
+}
+
+.bio{
+margin-left:20px;
+}
+.bio h2{
+font-size:24px;
+margin-bottom: 10px;
+}
+
+
+.skills-section{
+background-color:smokewhite;
+display:flex;
+flex-wrap: warp;
+gap: 30px;
+margin-bottom: 30px;
+}
+.skills {
+background-color: #3498db;
+color: white;
+padding: 10px 15px;
+border-radius: 20px;
+
+}
+
+.project-section{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+.project-card{
+flex-basis:30%;
+background-color:teal;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba (0,0,0.1);
+
+}
+
+@media (max-width:768px){
+.profile-section{
+ flex-direction:column;
+ }
+ 
+ .project-card{
+  flex-basis: 100%;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="profile-container">
+<!--profile section-->
+<div class="profile-section">
+<h1> Welcome </h1>
+<img src="images.jpg"alt="profile picture" width-15px>
+<div class ="bio">
+<h2> Rida </h2>
+<p>Web developer </p>
+</div>
+   </div>    
+<!--skill section-->
+<div class="skills-section">
+<div class="skills">
+<div class="skills">HTML</div>
+<div class="skills">CSS</div>
+<div class="skills">JAVASCRIPT</div>
+<div class="skills">REACT</div>
+</div>
+</div>
+<!--project section-->
+<div class="project-section">
+<div class="project-card">
+<h3> project 1</h3>
+<p> A responsive e-commerce website.</p>
+</div>
+<div class="project-card">
+<h3> project 2 </h3>
+<p> A social media app built with React.</p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
